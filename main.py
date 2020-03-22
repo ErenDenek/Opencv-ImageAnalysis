@@ -9,7 +9,7 @@ cropedImg = []
 
 kernel = np.ones((9,9), np.uint8)
 
-img = cv2.imread("test.png")
+img = cv2.imread("test1.png")
 empty = np.zeros((img.shape[0], img.shape[1], 3), dtype=np.uint8)
 
 def thresh_callback(val):
