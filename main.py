@@ -35,7 +35,7 @@ def thresh_callback(val):
         print(len(contours))
         if i%2==0:
             crop_img = img[y:y+h, x:x+w]
-            cv2.imwrite(str(i/4)+".jpg", crop_img) 
+            cv2.imwrite(str(int(i/2))+".jpg", crop_img) 
             cv2.imshow(str(c),crop_img)
         i+=1
         
